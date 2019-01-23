@@ -29,13 +29,6 @@ export default {
                     message: '请输入关键字!',
                     duration: 1000
                 })
-            } else {
-                var arr = this.products.filter(item => {
-                    return Object.keys(item).some(key => {
-                        return String(item[key]).toLowerCase().indexOf(this.keywords) > -1
-                    })
-                })
-                this.products = arr;
             }
         }
     }
