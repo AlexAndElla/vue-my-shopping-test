@@ -11,7 +11,7 @@
 </template>
 <script>
 import ProductList from '@/components/ProductList'
-import { Toast } from 'mint-ui';
+import { Toast } from 'mint-ui'
 export default {
     name: 'Search',
     components: {

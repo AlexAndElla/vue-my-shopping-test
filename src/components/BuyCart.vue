@@ -41,9 +41,9 @@
     </div>
 </template>
 <script>
-import store from '../vuex/store.js';
+import store from '../vuex/store.js'
 import Footer from '@/components/Footer'
-import { Toast } from 'mint-ui';
+import { Toast } from 'mint-ui'
 export default {
     name: 'BuyCart',
     store,
