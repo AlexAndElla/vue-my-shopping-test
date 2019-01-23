@@ -1,0 +1,88 @@
+{
+    "productList": [
+        {
+            "productId": "BM0",
+            "productName": "风景1",
+            "productPrice": 580,
+            "productIntro": "名山名水，空气新鲜，心旷神怡",
+            "productImgUrl": "static/img/product/view1.png",
+            "productType": 0,
+            "buyNum": 1,
+            "buyCkecked": false,
+            "ifActivicity": false,
+            "ifInventory": true
+        },
+        {
+            "productId": "BM1",
+            "productName": "商品1",
+            "productPrice": 40,
+            "productIntro": "名山名水，空气新鲜，心旷神怡",
+            "productImgUrl": "static/img/product/product1.png",
+            "productType": 1,
+            "buyNum": 1,
+            "buyCkecked": false,
+            "ifActivicity": false,
+            "ifInventory": false
+        },
+        {
+            "productId": "BM2",
+            "productName": "风景2",
+            "productPrice": 8,
+            "productIntro": "名山名水，空气新鲜，心旷神怡",
+            "productImgUrl": "static/img/product/view2.png",
+            "productType": 0,
+            "buyNum": 1,
+            "buyCkecked": false,
+            "ifActivicity": true,
+            "ifInventory": false
+        },
+        {
+            "productId": "BM3",
+            "productName": "风景3",
+            "productPrice": 71,
+            "productIntro": "名山名水，空气新鲜，心旷神怡",
+            "productImgUrl": "static/img/product/view3.png",
+            "productType": 0,
+            "buyNum": 1,
+            "buyCkecked": false,
+            "ifActivicity": false,
+            "ifInventory": false
+        },
+        {
+            "productId": "BM4",
+            "productName": "商品2",
+            "productPrice": 32,
+            "productIntro": "名山名水，空气新鲜，心旷神怡",
+            "productImgUrl": "static/img/product/product2.png",
+            "productType": 1,
+            "buyNum": 1,
+            "buyCkecked": false,
+            "ifActivicity": false,
+            "ifInventory": false
+        },
+        {
+            "productId": "BM5",
+            "productName": "风景4",
+            "productPrice": 8,
+            "productIntro": "名山名水，空气新鲜，心旷神怡",
+            "productImgUrl": "static/img/product/view4.png",
+            "productType": 0,
+            "buyNum": 1,
+            "buyCkecked": false,
+            "ifActivicity": true,
+            "ifInventory": false
+        },
+        {
+            "productId": "BM6",
+            "productName": "风景5",
+            "productPrice": 71,
+            "productIntro": "名山名水，空气新鲜，心旷神怡",
+            "productImgUrl": "static/img/product/view1.png",
+            "productType": 0,
+            "buyNum": 1,
+            "buyCkecked": false,
+            "ifActivicity": false,
+            "ifInventory": false
+        }
+    ] 
+}
