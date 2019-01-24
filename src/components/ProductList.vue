@@ -17,7 +17,7 @@
                 </li>
             </ul>
         </template>
-        <template v-if="keyword">
+        <template v-if="keyword && showFilterProductList">
             <ul class="clearFix" v-if="filterProductList.length > 0">
                 <li v-for="item in filterProductList" :key="item.productId" @click="goToProductInfo(item)">
                     <div class="headerArea">
@@ -49,6 +49,7 @@ export default {
     data() {
         return {
             productList: '',
+            showFilterProductList: false
         }
     },
     created() {
@@ -58,12 +59,11 @@ export default {
             this.getProductList();
         }
         window.addEventListener('scroll', this.onScroll)
-        
     },
     computed: {
         filterProductList(){
             if(this.keyword){
-                return this.$store.state.productData.filter((item) => {
+                return this.productList.filter((item) => {
                     return item.productName.toLowerCase().indexOf(this.keyword) != -1
                 })
             }

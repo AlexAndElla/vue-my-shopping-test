@@ -5,7 +5,7 @@
             <button type="button" @click="searchProduct">搜索</button>
         </div>
         <div class="productList">
-            <ProductList :keyword="keywords"></ProductList>
+            <ProductList :keyword="keywords" ref="getProductList"></ProductList>
         </div>
     </div>
 </template>
@@ -29,6 +29,9 @@ export default {
                     message: '请输入关键字!',
                     duration: 1000
                 })
+                this.$refs.getProductList.showFilterProductList = false
+            } else {
+                this.$refs.getProductList.showFilterProductList = true
             }
         }
     }
