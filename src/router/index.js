@@ -6,16 +6,23 @@ import ProductInfo from '@/components/ProductInfo'
 import SortInfo from '@/components/SortInfo'
 import BuyCart from '@/components/BuyCart'
 import Search from '@/components/Search'
+import E403 from '@/components/E403'
+import Login from '@/components/Login'
 
 Vue.use(Router)
 
-export default new Router({
+const route = new Router({
   linkActiveClass: 'active',
   mode: 'history',
   routes: [
     {
       path: '/',
-      redirect: Home,
+      redirect: Login,
+    },
+    {
+      path: '/Login',
+      name: 'Login',
+      component: Login
     },
     {
       path: '/Home',
@@ -25,7 +32,8 @@ export default new Router({
     {
       path: '/Personal',
       name: 'Personal',
-      component: Personal
+      component: Personal,
+      meta: {permission: true}
     },
     {
       path: '/ProductInfo',
@@ -47,5 +55,11 @@ export default new Router({
       name: 'Search',
       component: Search,
     },
+    {
+      path: '/E403',
+      name: 'E403',
+      component: E403,
+    },
   ]
 })
+export default route;

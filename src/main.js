@@ -17,6 +17,22 @@ Vue.use(VueAwesomeSwiper)
 
 Vue.config.productionTip = false
 
+router.beforeEach((to, from, next) => {
+    const username = localStorage.getItem('username');
+    if(username){
+        next()
+        if(to.meta.permission) {
+            username === "admin" ? next('/Personal'):next('/E403');
+        }
+    } else {
+        if(to.path == '/Login'){
+            next();
+        } else {
+            next('/Login');
+        }
+    }
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
